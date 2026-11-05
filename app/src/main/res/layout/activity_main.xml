@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="Ảnh banner" />
+
+    <TextView
+        android:id="@+id/TieuDeKhoaHoc"
+        android:text="Chuyên Đề Lập Trình Android Native Chuyên Sâu: Kiến Trúc Clean Architecture và Jetpack 2026"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_text_title"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:breakStrategy="high_quality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/HocPhiNiemYet"
+        android:text="3.500.000 VNĐ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/ThongTinPhu"
+        android:text="Thời lượng: 12 buổi (36 giờ học)"
+        android:textSize="13sp"
+        android:textColor="@color/color_text_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InputName"
+        android:padding="14dp"
+        android:layout_margin="12dp"
+        android:textColor="@color/color_text_hint"
+        android:inputType="text"
+        android:hint="Nhập họ và tên học viên"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InputEmail"
+        android:padding="14dp"
+        android:layout_margin="12dp"
+        android:textColor="@color/color_text_hint"
+        android:inputType="textEmailAddress"
+        android:hint="Nhập email nhận vé điện tử"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InputPhone"
+        android:padding="14dp"
+        android:layout_margin="12dp"
+        android:textColor="@color/color_text_hint"
+        android:inputType="phone"
+        android:hint="Nhập số điện thoại"
+        android:imeOptions="actionNext"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Radio_Ca1"
+            android:text="Ca Sáng (08:30 - 11:30)"
+            android:textColor="@color/color_text_body"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Radio_Ca2"
+            android:text="Ca Chiều (14:00 - 17:00)"
+            android:textColor="@color/color_text_body" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Radio_Ca3"
+            android:text="Ca Tối (18:30 - 21:30)"
+            android:textColor="@color/color_text_body" />
+    </RadioGroup>
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_body"
+        android:text="Nhận giáo trình bìa cứng in màu tại lớp (+150.000đ)"
+        android:checked="false"
+        android:layout_margin="16dp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_body"
+        android:text="Gói cố vấn nghề nghiệp 1-1 với Senior Engineer (+500.000đ)"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_body"
+        android:text="Tôi cam kết tham gia đầy đủ các buổi học và tuân thủ nội quy đào tạo"
+        android:textSize="13sp"
+        android:layout_margin="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/color_primary"
+        android:textSize="12dp"
+        android:elevation="4dp"
+        android:text="XÁC NHẬN ĐẶT CHỖ VÀ THANH TOÁN"
+        android:layout_margin="16dp"
+        app:icon="@drawable/m3_split_button_chevron_avd"
+        app:iconPadding="8dp"
+        />
+    </LinearLayout>
+</ScrollView>
+
